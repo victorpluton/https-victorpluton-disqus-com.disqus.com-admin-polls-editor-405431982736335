@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta de Víctor con Disqus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .contenedor {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Participa en mi encuesta</h1>
+
+    <!-- Encuesta de Disqus -->
+    <div class="disqus_poll" data-disqus-poll-id="405431982736335"></div>
+
+    <script>
+      (function() {
+          if (document.getElementById('disqus_polls_script'))
+              return;
+          var d = document, s = d.createElement('script');
+          s.id = 'disqus_polls_script';
+          s.src = 'https://victorpluton-disqus-com.disqus.com/polls.js';
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+
+    <noscript>
+      Por favor activa JavaScript para ver la encuesta de Disqus.
+    </noscript>
+  </div>
+</body>
+</html>
